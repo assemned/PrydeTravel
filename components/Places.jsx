@@ -9,7 +9,7 @@ const Places = () => {
 
   const scrollLeft = () => {
     if (containerRef.current) {
-      const scrollAmount = 333;
+      const scrollAmount = 325;
       containerRef.current.scrollTo({
         left: containerRef.current.scrollLeft - scrollAmount,
         behavior: "smooth",
@@ -19,7 +19,7 @@ const Places = () => {
 
   const scrollRight = () => {
     if (containerRef.current) {
-      const scrollAmount = 333;
+      const scrollAmount = 325;
       containerRef.current.scrollTo({
         left: containerRef.current.scrollLeft + scrollAmount,
         behavior: "smooth",
