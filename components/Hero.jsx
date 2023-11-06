@@ -26,7 +26,7 @@ const Hero = () => {
           <img
             src={`/hero1.png`}
             alt="Hero"
-            className={`object-cover w-full max-lg:min-h-[75vh] duration-1000 ${
+            className={`object-cover w-full max-lg:min-h-[85vh] max-sm:min-h-[95vh] duration-1000 ${
               picture === 1
                 ? "opacity-100 relative"
                 : " opacity-0 absolute top-0"
@@ -35,7 +35,7 @@ const Hero = () => {
           <img
             src={`/hero2.png`}
             alt="Hero"
-            className={`object-cover w-full max-lg:min-h-[75vh]  duration-1000 ${
+            className={`object-cover w-full max-lg:min-h-[85vh] max-sm:min-h-[95vh]  duration-1000 ${
               picture === 2
                 ? "opacity-100 relative"
                 : " opacity-0 absolute top-0"
@@ -44,7 +44,7 @@ const Hero = () => {
           <img
             src={`/hero3.png`}
             alt="Hero"
-            className={`object-cover w-full max-lg:min-h-[75vh]  duration-1000 ${
+            className={`object-cover w-full max-lg:min-h-[85vh] max-sm:min-h-[95vh]  duration-1000 ${
               picture === 3
                 ? "opacity-100 relative"
                 : " opacity-0 absolute top-0"
