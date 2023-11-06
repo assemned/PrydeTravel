@@ -3,7 +3,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav id="navbar" className="flexCenter">
-      <div className="p-x py-10 max-sm:py-5 max-container flexBetween absolute w-full top-0 z-10">
+      <div className="p-x py-10 max-sm:py-6 max-container flexBetween absolute w-full top-0 z-10">
         <img src="/logo.png" alt="logo" className="w-32 cursor-pointer" />
         <div className=" text-white flexRow gap-10 flexCenter text-p-4 max-md:hidden">
           <ul className=" flexCenter gap-10">

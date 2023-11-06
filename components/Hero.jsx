@@ -51,7 +51,7 @@ const Hero = () => {
             }`}
           />
         </div>
-        <div className="flexCol absolute inset-0 p-x pb-20 pt-44 max-md:pt-28 max-container gap-5 max-md:gap-16 max-sm:gap-20">
+        <div className="flexCol absolute inset-0 p-x pb-20 pt-44 max-md:pt-36 max-container gap-5 max-md:gap-16 max-sm:gap-20 max-md:h-full">
           <div className="w-full text-white flexStart flexCol gap-8">
             <h1 className="text-h-1 font-first ">
               Explore the world with <br /> exciting people
@@ -64,13 +64,13 @@ const Hero = () => {
               Take a Trip <TbArrowNarrowRight size={22} />
             </button>
           </div>
-          <div className="flex justify-end items-center gap-3">
+          <div className="flex justify-end items-center  max-md:self-center max-md:h-full max-md:justify-self-center gap-3">
             <button
               className={`btn-arrow ${picture === 1 && "btn-arrow-disabled"}`}
               onClick={prevPicture}>
               <BsArrowLeft size={26} />
             </button>
-            <p className="text-p-2 text-white">{picture}/3</p>
+            <p className="text-p-1 text-white">{picture}/3</p>
             <button
               className={`btn-arrow ${picture === 3 && "btn-arrow-disabled"}`}
               onClick={nextPicture}>
