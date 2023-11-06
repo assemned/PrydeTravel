@@ -5,7 +5,7 @@ import { REVIEWS } from "./constants";
 import { useState } from "react";
 
 const Reviews = () => {
-  const [client, setClient] = useState(3);
+  const [client, setClient] = useState(2);
 
   return (
     <section>

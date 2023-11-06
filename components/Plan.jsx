@@ -37,7 +37,7 @@ const Plan = () => {
             </div>
             <div className="flexCol gap-3 justify-center">
               <PiBed size={40} className=" cursor-pointer" />
-              <h6 className="text-h-3 font-first">Rent a car</h6>
+              <h6 className="text-h-3 font-first">Get a hotel</h6>
               <p className="text-p-3">
                 Lorem ipsum dolor sit amet consecteur fin dren
               </p>
