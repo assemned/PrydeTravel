@@ -51,7 +51,7 @@ const Hero = () => {
             }`}
           />
         </div>
-        <div className="flexCol absolute inset-0 p-x pb-20 pt-44 max-md:pt-28 max-container gap-5 max-md:gap-10">
+        <div className="flexCol absolute inset-0 p-x pb-20 pt-44 max-md:pt-28 max-container gap-5 max-md:gap-16 max-sm:gap-20">
           <div className="w-full text-white flexStart flexCol gap-8">
             <h1 className="text-h-1 font-first ">
               Explore the world with <br /> exciting people
