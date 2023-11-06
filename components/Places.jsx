@@ -50,7 +50,7 @@ const Places = () => {
           {PLACES.map((place, index) => (
             <div
               key={index}
-              className=" h-[400px] w-[300px] max-xs:w-[88%] ml-2 mr-5 relative text-white rounded-2xl shadow-lg cursor-pointer overflow-hidden place-card-container inline-block">
+              className=" h-[400px] w-[300px] ml-2 mr-5 relative text-white rounded-2xl shadow-lg cursor-pointer overflow-hidden place-card-container inline-block">
               <img
                 src={place.picture}
                 alt="Place"
