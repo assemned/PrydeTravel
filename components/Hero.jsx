@@ -4,7 +4,7 @@ import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import { PiShieldCheck } from "react-icons/pi";
 import { BsAirplane } from "react-icons/bs";
 import { HiAdjustments } from "react-icons/hi";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
   const [picture, setPicture] = useState(1);
@@ -19,34 +19,51 @@ const Hero = () => {
       return setPicture(picture - 1);
     }
   };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (picture === 1) {
+        setPicture(2);
+      }
+      if (picture === 2) {
+        setPicture(3);
+      }
+      if (picture === 3) {
+        setPicture(1);
+      }
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+  }, [picture]);
+
   return (
     <section id="hero" className=" bg-primary-yellow">
       <div className="relative">
         <div className="relative bg-gray-700">
           <img
-            src={`/hero1.png`}
+            src={`/hero1.jpg`}
             alt="Hero"
-            className={`object-cover w-full max-lg:min-h-[85vh] max-sm:min-h-[95vh] duration-1000 ${
+            className={`object-cover w-full max-lg:h-[85vh] max-sm:min-h-[95vh] duration-1000 ${
               picture === 1
                 ? "opacity-100 relative"
                 : " opacity-0 absolute top-0"
             }`}
           />
           <img
-            src={`/hero2.png`}
+            src={`/hero2.jpg`}
             alt="Hero"
             className={`object-cover w-full max-lg:min-h-[85vh] max-sm:min-h-[95vh]  duration-1000 ${
               picture === 2
-                ? "opacity-100 relative"
+                ? "opacity-80 relative"
                 : " opacity-0 absolute top-0"
             }`}
           />
           <img
-            src={`/hero3.png`}
+            src={`/hero3.jpg`}
             alt="Hero"
             className={`object-cover w-full max-lg:min-h-[85vh] max-sm:min-h-[95vh]  duration-1000 ${
               picture === 3
-                ? "opacity-100 relative"
+                ? "opacity-80 relative"
                 : " opacity-0 absolute top-0"
             }`}
           />
@@ -77,7 +94,7 @@ const Hero = () => {
               <BsArrowRight size={26} />
             </button>
           </div>
-          <div className=" border-t-2 border-white flexCenter w-full gap-20 text-white pt-5 max-xl:hidden">
+          <div className=" border-t-2 border-white flexCenter w-full gap-20 text-white pt-5 max-xl:hidden max-lg:flexCenter max-sm:flex-wrap max-sm:gap-5">
             <div className=" flexStart flexCol gap-2">
               <p className=" text-h-4 font-bold font-first">01</p>
               <p className="text-p-2 font-bold">
