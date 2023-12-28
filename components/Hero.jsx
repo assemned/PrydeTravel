@@ -94,7 +94,7 @@ const Hero = () => {
               <BsArrowRight size={26} />
             </button>
           </div>
-          <div className=" border-t-2 border-white flexCenter w-full gap-20 text-white pt-5 max-xl:hidden max-lg:flexCenter max-sm:flex-wrap max-sm:gap-5">
+          <div className=" border-t-2 border-white flexCenter w-full gap-20 text-white pt-5 max-xl:hidden max-sm:flex-wrap max-sm:gap-5">
             <div className=" flexStart flexCol gap-2">
               <p className=" text-h-4 font-bold font-first">01</p>
               <p className="text-p-2 font-bold">
